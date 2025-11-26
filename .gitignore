@@ -205,3 +205,20 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Ignore all data files
+data/**
+
+# Allow folder structure
+!data/
+!data/raw/
+!data/processed/
+!backend/
+!frontend/
+
+# Allow place holders
+!data/raw/README.md
+!data/processed/.gitkeep
+!backend/.gitkeep
+!frontend/.gitkeep

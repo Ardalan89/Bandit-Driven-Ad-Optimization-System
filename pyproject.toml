@@ -1,0 +1,26 @@
+[project]
+name = "bandit-driven-ad-optimization-system"
+version = "0.1.0"
+description = "CTR optimization using UCB and Thompson Sampling (Multi-Armed Bandits)"
+authors = [
+    {name = "Ardalan"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "jupyterlab>=4.5.0",
+    "matplotlib>=3.10.7",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "pyyaml>=6.0.3",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+]
+
+[tool.uv]
+managed = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
