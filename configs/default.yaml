@@ -1,24 +1,18 @@
 seed: 42
 
-bandit:
-  type: "ucb"
+model: "ucb" 
+
+bandit:       
   rounds: 1000
 
-  ucb:
+  params:           
     confidence_level: 2.0
-
-  thompson_sampling:
     prior_alpha: 1.0
     prior_beta: 1.0
 
 data:
   path: "data/raw/ads.csv"
-  click_column: "Click"
-  ad_column: "Ad"
 
 experiment:
-  n_simulations: 20
-  log_results: true 
+  log_results: true
   output_dir: "data/processed/"
-
-  
