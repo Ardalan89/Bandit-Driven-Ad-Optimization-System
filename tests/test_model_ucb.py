@@ -1,4 +1,3 @@
-import numpy as np
 from bandit_ad_opt.models.ucb import UCB1
 
 def test_ucb_basic():
